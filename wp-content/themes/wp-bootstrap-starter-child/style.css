@@ -1,0 +1,400 @@
+/*
+ Theme Name:   wp-bootstrap-starter-child
+ Theme URI:    http://example.com/wp-bootstrap-starter-child/
+ Description:  wp-bootstrap-starter-child Theme
+ Author:       Bhavika
+ Author URI:   http://example.com
+ Template:     wp-bootstrap-starter
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  wp-bootstrap-starter-child
+*/
+
+html {
+  scroll-padding-top: 80px;}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #02243c;
+}
+
+header#masthead {
+    background: #000000;
+}
+
+#content.site-content {
+    background: #f7f7f7;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header#masthead .navbar-nav > li > a {
+    color: #fff !important;
+    padding: 10px 25px !important;
+    font-size: 1rem !important;
+    opacity: 0.8 !important;
+}
+
+header#masthead .navbar-nav > li > a:hover {
+    opacity: 1 !important;
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    font-weight: normal !important;
+}
+
+a:hover {
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.white-box {
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+    background: #fff;
+
+}
+
+header#masthead.sticky-header {
+    position: fixed;
+    width:  100%;
+    z-index: 1;
+    top: 0;
+}
+
+header#masthead ul.navbar-nav {
+    padding-left: 90px;
+}
+
+span.navbar-toggler-icon {
+    margin-top: -10px;
+}
+
+span.navbar-toggler-icon span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    display: block;
+}
+
+.n2-ss-layer.n2-ow.slider-label {
+      background: #03243b !important;
+      width: 155px !important;
+      height: 40px !important;
+      /*position: absolute !important;*/
+      right: 15px !important;
+      text-align: left !important;
+}
+
+.n2-ss-slider .n2-ow:before, .n2-ss-slider .n2-ow:after, .n2-ss-slider .n2-ow-all :not(i):before, .n2-ss-slider .n2-ow-all :not(i):after {
+    display: block !important;
+}
+
+.n2-ss-layer.n2-ow.slider-label:before {
+    left: 100% !important;
+    border: solid transparent !important;
+    content: " " !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    border-color: rgba(136, 183, 213, 0) !important;
+    border-left-color: #03243b !important;
+    border-width: 20px !important;
+}
+
+.n2-ss-layer.n2-ow.slider-label:after {
+    top: 100% !important;
+    border: solid transparent !important;
+    content: " " !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    border-color: rgba(136, 183, 213, 0) !important;
+    border-top-color: #03243b !important;
+    border-width: 10px !important;
+    left: -10px !important;
+    margin-left: 0px !important;
+    z-index: -1 !important;
+}
+
+.form-section {
+    color: #fff;
+    height: 600px;
+    padding-top: 40px;
+}
+
+.form-section:before {
+    width: 0; 
+    height: 0; 
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 75px solid #f00;
+}
+
+.form-section .white-box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 230px;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    background: #15314d;
+    padding-top: 50px;
+    z-index: 99;
+    max-width: 350px;
+    padding: 30px 60px 0;
+    top: 0;
+}
+
+.sidebar:after {
+    content: "";
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-top: 40px solid #15314d;
+    bottom: -40px !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.sidebar input[type="submit"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 18px !important;
+    background: #72b42f;
+    background-image: linear-gradient(#98d155, #72b42f) !important;
+    box-shadow: 0 4px 5px #1a1a1a;
+    -webkit-box-shadow: 0 4px 5px #1a1a1a;
+    -moz-box-shadow: 0 4px 5px #1a1a1a;
+    padding: 10px 0 !important;
+    border-color: #000 !important;
+}
+
+.sidebar .wpcf7-not-valid-tip {
+    font-size: 12px;
+}
+
+.sidebar .wpcf7-response-output {
+      font-size: 13px;
+      line-height: 18px;
+      margin: 0 !important;
+}
+
+.sidebar form.wpcf7-form p {
+    margin-bottom: 18px;
+}
+
+.sidebar p.title {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 23px;
+    margin-bottom: 30px !important;
+}
+
+.sidebar form.wpcf7-form label {
+    margin-bottom: 0 !important;
+}
+
+.sidebar form.wpcf7-form .wpcf7-spinner {
+    display: none;
+}
+
+.slider-spacing .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 10px 0!important;
+}
+
+.footer-widget {
+    background: #d1d1d1;
+    padding-top: 30px;
+}
+
+.footer-widget h4 {
+    color: #03243b;
+    font-size: 1.2rem;
+}
+
+.footer-widget .widget.widget_block {
+    margin-bottom: 10px;
+}
+
+.footer-widget p {
+    margin-bottom: 5px;
+    color: #02243c;
+    line-height: 15px;
+}
+
+.footer-widget p a {
+    color: #02243c;
+}
+
+footer.site-footer {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+footer.site-footer .site-info {
+    margin-top: 10px;
+}
+
+.sidebar-sticky {
+  position: fixed;
+}
+
+.sidebar-sticky-none {
+  top: auto;
+  bottom: 0;
+  position: absolute;
+}
+
+/*--------------Media Queries--------------*/
+@media only screen and (max-width: 1024px) {
+    .footer-widget .px-5 {
+        padding-left: 15px!important;
+        padding-right: 15px !important;
+    }
+
+    .footer-widget .pr-5 {
+        padding-right: 15px !important;
+    }
+
+    .footer-widget .pl-5 {
+        padding-left: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    header#masthead ul.navbar-nav,
+    header#masthead ul.navbar-nav li {
+        display: inline-block;
+    }
+
+    header.site-header .collapse.navbar-collapse.justify-content-start {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    header.site-header .navbar-toggler {
+        display: none;
+    }
+
+    header#masthead ul.navbar-nav {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header#masthead ul.navbar-nav {
+        padding-left: 0;
+    }
+
+    header#masthead .navbar-nav > li > a {
+        padding: 10px 0 !important;
+        font-size: 0.9rem !important;
+    }
+
+    footer#colophon {
+      font-size: 75%;
+    }
+
+    .sidebar,
+    .sidebar.sidebar-sicky {
+        position: relative;
+        top: inherit;
+        order: 1;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;;
+    }
+
+    .sidebar::after {
+      content: "";
+      border-left: 270px solid transparent;
+      border-right: 270px solid transparent;
+      border-top: 60px solid #15314d;
+      bottom: -60px !important;
+    }
+
+    .form-section {
+        padding: 0;
+    }
+
+    header#masthead {
+        padding: 15px 0;
+    }
+
+    header.site-header .container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header.site-header .navbar-brand {
+        padding-left: 15px;
+    }
+
+    header.site-header .navbar-toggler {
+        padding-right: 20px;
+    }
+
+    header.site-header #main-nav {
+        border-top: 1px solid #eee;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .n2-ss-layer.n2-ow.slider-label div {
+        font-size: 15px !important;
+    }
+
+@media only screen and (max-width: 767px) {
+
+    section.content-area {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .elementor-widget-container p {
+        font-size: 14px;
+    }
+
+    .footer-widget h4 {
+        font-size: 1.3rem;
+    }
+
+    .footer-widget figure.wp-block-image img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .footer-widget .px-5,
+    .footer-widget .pr-5,
+    .footer-widget .pl-5 {
+        margin-bottom: 15px;
+    }
+
+    footer.site-footer .white-box {
+        margin: 0 auto;
+        height: 25px;
+    }
+
+     footer.site-footer .white-box.float-right {
+        float: none!important;
+    }
+
+    footer.site-footer .site-info {
+        margin: 15px 0;
+    }
+}
