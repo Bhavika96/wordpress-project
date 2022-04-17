@@ -33,19 +33,26 @@ header#masthead {
     padding-bottom: 0;
 }
 
-header#masthead .navbar-nav > li > a {
-    color: #fff !important;
-    padding: 10px 25px !important;
-    font-size: 1rem !important;
-    opacity: 0.8 !important;
+header#masthead .navbar-nav > li {
+    padding: 0 20px;
 }
 
-header#masthead .navbar-nav > li > a:hover {
+header#masthead .navbar-nav > li > a {
+    color: #fff !important;
+    padding: 8px 5px !important;
+    font-size: 1rem !important;
+    opacity: 0.8 !important;
+    font-weight: 600 !important;
+}
+
+header#masthead .navbar-nav > li > a:hover,
+header#masthead .navbar-nav > li > a.nav-link.active {
     opacity: 1 !important;
     transition: all .2s linear;
     -moz-transition: all .2s linear;
     -webkit-transition: all .2s linear;
-    font-weight: normal !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #fff;
 }
 
 a:hover {
@@ -89,9 +96,8 @@ span.navbar-toggler-icon span {
       background: #03243b !important;
       width: 155px !important;
       height: 40px !important;
-      /*position: absolute !important;*/
-      right: 15px !important;
       text-align: left !important;
+      left: 0 !important;
 }
 
 .n2-ss-slider .n2-ow:before, .n2-ss-slider .n2-ow:after, .n2-ss-slider .n2-ow-all :not(i):before, .n2-ss-slider .n2-ow-all :not(i):after {
@@ -302,31 +308,9 @@ footer.site-footer .site-info {
         font-size: 0.9rem !important;
     }
 
-    footer#colophon {
-      font-size: 75%;
-    }
-
-    .sidebar,
-    .sidebar.sidebar-sicky {
-        position: relative;
-        top: inherit;
-        order: 1;
-        display: flex;
-        max-width: 100%;
-        width: 100%;
-        text-align: center;;
-    }
-
-    .sidebar::after {
-      content: "";
-      border-left: 270px solid transparent;
-      border-right: 270px solid transparent;
-      border-top: 60px solid #15314d;
-      bottom: -60px !important;
-    }
-
-    .form-section {
-        padding: 0;
+    header#masthead .navbar-nav > li > a:hover,
+    header#masthead .navbar-nav > li > a.nav-link.active {
+        border-bottom: 0;
     }
 
     header#masthead {
@@ -355,9 +339,54 @@ footer.site-footer .site-info {
         padding-top: 10px;
     }
 
-    .n2-ss-layer.n2-ow.slider-label div {
-        font-size: 15px !important;
+    footer#colophon {
+      font-size: 75%;
     }
+
+    .form-section .sidebar,
+    .form-section .sidebar.sidebar-sicky {
+        position: relative;
+        top: inherit;
+        order: 1;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;;
+    }
+
+    .form-section .sidebar::after {
+      content: "";
+      border-left: 270px solid transparent;
+      border-right: 270px solid transparent;
+      border-top: 60px solid #15314d;
+      bottom: -60px !important;
+    }
+
+    .form-section {
+        padding: 0;
+        order: 1;
+        height: inherit;
+        z-index: 0;
+    }
+
+    .form-section .sidebar::after {
+      content: none;
+    }
+
+    .form-section .wpcf7 {
+        margin: 0 auto;
+        max-width: 300px;
+        padding-bottom: 30px;
+    }
+
+    .n2-ss-layer.n2-ow.slider-label div {
+        font-size: 18px !important;
+    }
+
+    section.content-area {
+        order: 2;
+    }
+}
 
 @media only screen and (max-width: 767px) {
 

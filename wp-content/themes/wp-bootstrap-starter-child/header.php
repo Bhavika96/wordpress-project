@@ -10,7 +10,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class();  ?> data-offset="100">
+<body <?php body_class();  ?> data-spy="scroll" data-target="#scroll-spy" data-offset="100">
 
 <?php 
     if ( function_exists( 'wp_body_open' ) ) {
@@ -36,7 +36,7 @@
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
         <div class="container">
-            <nav class="navbar navbar-expand-xl p-0">
+            <nav class="navbar navbar-expand-xl p-0" id="scroll-spy">
                 <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
